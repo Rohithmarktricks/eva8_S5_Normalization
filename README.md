@@ -37,10 +37,11 @@ Create these graphs:
 
 #### train_helper.py
 1. This is the helper module that contains the following:
-    1. ```BN_Trainer:``` This class contains the train and test method that has been written
-    exclusively for the Batch Normalization + L1 Regulization.
+    1. ```BN_Trainer:``` This class contains the train and test methods that have been written
+    exclusively for the ```Batch Normalization + L1 Regulization```.
     2. ```Trainer:``` This class contains the train and test methods that can be used for 
-    LayerNormalization and GroupNormalization.
+    ```LayerNormalization``` and ```GroupNormalization```.
+    3. Each of the above classes also contain ```get_stats()``` method, to track the loss and accuracy values.
 2. ```get_misclassified_images```: this method takes the model and test_loader and generates the mis-classified images.
 
 
@@ -58,3 +59,9 @@ Create these graphs:
 
 #### Sample Misclassification by the CNN model - Group Normalization
 ![alt text](/images/GroupNorm_misclassified.png)
+
+
+#### Findings:
+1. BatchNormalization + L1 Regularization, seems to have greater convergence among other normalization techniques. But the loss function is not completely smooth.
+2. Group Normalization: After having trained for 20 epochs (3-4 times), the common observation is that the starting error(rate) is minimum. Seems bit unstable (both loss and accuracy, seems to raise/fall rapidly)
+3. Layer Normalization: Has the smooth loss curve among the three. Also, convergence rate is higher.
