@@ -25,7 +25,10 @@ Create these graphs:
 
 
 ### Solution
+#### Please refer to ````Solution.ipynb``` Jupyter Notebook for the experiments and plots.
 
+
+#### Modules-API developed for future purposes!
 #### model.py:
 1. This is the main module that contains the code for the Model Definition.
 2. This module contains the 3 classes:
