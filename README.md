@@ -45,8 +45,8 @@ Create these graphs:
 
 
 #### Loss of 3 different Normalization Techniques
-[Loss Graph](/Loss_norm.png)
+![alt text](/Loss_norm.png)
 
 #### Accuracy of CNN models with 3 different Normalization Techniques
-[Accuracy Graph](/Acc_norm.png)
+![alt text](/Acc_norm.png)
 
