@@ -50,3 +50,5 @@ Create these graphs:
 #### Accuracy of CNN models with 3 different Normalization Techniques
 ![alt text](/Acc_norm.png)
 
+#### Sample Misclassifications by the CNN model
+![alt text](/BatchNorm_misclassified.png)
