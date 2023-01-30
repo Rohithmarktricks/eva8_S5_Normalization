@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from tqdm import tqdm
 
 class BN_Trainer:                                        
-
+    '''Trainer Class for Batch Normalization'''
     def __init__(self, model):
         self.model = model
         self.train_losses = []
@@ -35,7 +35,7 @@ class BN_Trainer:
             # Predict
             y_pred = self.model(data)
 
-            # Calculate loss
+            # Calculate loss along with L1 Regularization
             loss = F.nll_loss(y_pred, target)
             l1 = 0
             for p in self.model.parameters():
@@ -97,7 +97,7 @@ class BN_Trainer:
 
 
 class Trainer:
-
+    '''Trainer class for Layer & Group Normalization'''
     def __init__(self, model):
         self.model = model
         self.train_losses = []
@@ -168,6 +168,10 @@ class Trainer:
 
 
 def get_misclassified_images(model, device, test_loader):
+    '''Takes the test_loader as input and returns 
+    the dictionary{index: [image, true_label, predicted_label]} 
+    of misclassfied images.
+    '''
     misclassified_imgs = {}
     model.eval()
     idx = 0

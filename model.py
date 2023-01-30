@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 
 dropout_value = 0.1
 class LayerNormCNN(nn.Module):
+    '''Model - CNN for Layer Normalization'''
     def __init__(self):
         super(LayerNormCNN, self).__init__()
         # Input Block
@@ -92,6 +93,7 @@ class LayerNormCNN(nn.Module):
 
 
 class GroupNormCNN(nn.Module):
+    '''Model CNN with Group Normalization'''
     def __init__(self):
         super(GroupNormCNN, self).__init__()
         # Input Block
@@ -175,6 +177,7 @@ class GroupNormCNN(nn.Module):
 
 
 class BatchNormCNN(nn.Module):
+    '''Model CNN with Batch Normalization'''
     def __init__(self):
         super(BatchNormCNN, self).__init__()
         # Input Block
@@ -258,6 +261,8 @@ class BatchNormCNN(nn.Module):
 
 
 def get_model(normalization_type):
+    '''Function that takes the type of normalization technique that has to be applied 
+    and returns the model.'''
     if normalization_type == "BN":
         return BatchNormCNN()
     elif normalization_type == "LN":
