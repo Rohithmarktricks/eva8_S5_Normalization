@@ -45,10 +45,10 @@ Create these graphs:
 
 
 #### Loss of 3 different Normalization Techniques
-![alt text](/Loss_norm.png)
+![alt text](/Loss_plot.png)
 
 #### Accuracy of CNN models with 3 different Normalization Techniques
-![alt text](/Acc_norm.png)
+![alt text](/Acc_plot.png)
 
 #### Sample Misclassifications by the CNN model - Batch Normalization
 ![alt text](/BatchNorm_misclassified.png)
