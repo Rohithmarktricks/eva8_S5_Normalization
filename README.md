@@ -50,5 +50,11 @@ Create these graphs:
 #### Accuracy of CNN models with 3 different Normalization Techniques
 ![alt text](/Acc_norm.png)
 
-#### Sample Misclassifications by the CNN model
+#### Sample Misclassifications by the CNN model - Batch Normalization
 ![alt text](/BatchNorm_misclassified.png)
+
+#### Sample Misclassifications by the CNN model - Layer Normalization
+![alt text](/LayerNorm_misclassified.png)
+
+#### Sample Misclassification by the CNN model - Group Normalization
+![alt text](/GroupNorm_misclassified.png)
