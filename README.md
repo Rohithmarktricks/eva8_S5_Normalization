@@ -25,11 +25,11 @@ Create these graphs:
 
 
 ### Solution
-#### Please refer to ````Solution.ipynb``` Jupyter Notebook for the experiments and plots.
+#### Please refer to [Solution.ipynb](/Solution.ipynb) Jupyter Notebook for the experiments and plots.
 
 
 #### Modules-API developed for future purposes!
-#### model.py:
+#### [model.py](/model.py)
 1. This is the main module that contains the code for the Model Definition.
 2. This module contains the 3 classes:
     LayerNormCNN
@@ -38,7 +38,7 @@ Create these graphs:
 3. This module also contains ```get_model()``` function that takes the ```normalization``` argument and creates the CNN model with corresponding Normalization technique.
 
 
-#### train_helper.py
+#### [train_helper.py](/train_helper.py)
 1. This is the helper module that contains the following:
     1. ```BN_Trainer:``` This class contains the train and test methods that have been written
     exclusively for the ```Batch Normalization + L1 Regulization```.
